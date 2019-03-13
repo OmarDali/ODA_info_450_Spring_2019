@@ -18,11 +18,13 @@ public:
 	void set_last_name(char* value) { strcpy(last_name, value); }
 	void set_empType(bool t) { empType = t; }
 	void set_compensation(int t)
-	{
+	
+	void printEntry() {
+		
 		if (empType) { t = t * 2000; compensation = t; }
 		compensation = t;
 	}
-	void printEntry() {
+		{
 		if (last_name) {
 			cout << last_name << ", ";
 			cout << first_name << " ";
